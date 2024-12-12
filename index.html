@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Flex Direction</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Toggle Buttons -->
+    <input type="radio" name="toggle" id="on" />
+    <input type="radio" name="toggle" id="off" checked />
+    <div class="toggle">
+        <label for="off" class="off"><i class="fa-solid fa-table-cells-large"></i></label>
+        <label for="on" class="on"><i class="fa-solid fa-list-ul"></i></label>
+    </div>
+
+    <!-- Card Section -->
+    <div class="card_container flex">
+        <div class="card flex dicrection_column">
+            <div class="card_header relative">
+                <figure>
+                    <a href="#">
+                        <img src="img/grid-1.jpg" alt="">
+                    </a>
+                </figure>
+                <div class="agent_img absolute">
+                    <img src="img/face1.jpg" alt="Agent image">
+                </div>
+            </div>
+            <div class="card_content">
+                <div class="card_body">
+                    <div class="flex justity_between">
+                        <p class="label">For Rent</p>
+                        <p class="product_price hidden">
+                            <span> &dollar;34,900</span>/Month
+                        </p>
+                    </div>
+                    <h2 class="card_title">
+                        <a href="#">New Apartment Nice View</a>
+                    </h2>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> Belmont Gardens, Chicago</p>
+                    <ul class="plot_breif flex">
+                        <li><span>3</span> Bed</li>
+                        <li><span>2</span> Bath</li>
+                        <li><span>3450</span> Square fit</li>
+                    </ul>
+                    <div class="card_links  flex">
+                        <a href="#" class="quick_view" title="Quick View"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                        <a href="#" class="wish_list" title="Wish List"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#" class="product_details" title="Product Details"><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="colum_view flex justity_between">
+                        <div class="real_estate_agent flex">
+                            <div class="agent_img">
+                                <a href="#"><img src="img/face1.jpg" alt="Agent image"></a>
+                            </div>
+                            <div class="agent_brief">
+                                <h6><a href="#">William Seklo</a></h6>
+                                <small>Estate Agents</small>
+                            </div>
+                        </div>
+                        <div class="links flex">
+                            <a href="#" class="quick_view" title="Quick View"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                            <a href="#" class="wish_list" title="Wish List"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#" class="product_details" title="Product Details"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_footer">
+                    <p class="product_price">
+                        <span> &dollar;34,900</span>/Month
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card flex dicrection_column">
+            <div class="card_header relative">
+                <figure>
+                    <a href="#">
+                        <img src="img/grid-2.jpg" alt="">
+                    </a>
+                </figure>
+                <div class="agent_img absolute">
+                    <img src="img/face1.jpg" alt="Agent image">
+                </div>
+            </div>
+            <div class="card_content">
+                <div class="card_body">
+                    <div class="flex justity_between">
+                        <p class="label">For Rent</p>
+                        <p class="product_price hidden">
+                            <span> &dollar;34,900</span>/Month
+                        </p>
+                    </div>
+                    <h2 class="card_title">
+                        <a href="#">New Apartment Nice View</a>
+                    </h2>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> Belmont Gardens, Chicago</p>
+                    <ul class="plot_breif flex">
+                        <li><span>3</span> Bed</li>
+                        <li><span>2</span> Bath</li>
+                        <li><span>3450</span> Square fit</li>
+                    </ul>
+                    <div class="card_links  flex">
+                        <a href="#" class="quick_view" title="Quick View"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                            <a href="#" class="wish_list" title="Wish List"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#" class="product_details" title="Product Details"><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="colum_view flex justity_between">
+                        <div class="real_estate_agent flex">
+                            <div class="agent_img">
+                                <a href="#"><img src="img/face1.jpg" alt="Agent image"></a>
+                            </div>
+                            <div class="agent_brief">
+                                <h6><a href="#">William Seklo</a></h6>
+                                <small>Estate Agents</small>
+                            </div>
+                        </div>
+                        <div class="links flex">
+                            <a href="#" class="quick_view" title="Quick View"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                            <a href="#" class="wish_list" title="Wish List"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#" class="product_details" title="Product Details"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_footer">
+                    <p class="product_price">
+                        <span> &dollar;34,900</span>/Month
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card flex dicrection_column">
+            <div class="card_header relative">
+                <figure>
+                    <a href="#">
+                        <img src="img/grid-3.jpg" alt="">
+                    </a>
+                </figure>
+                <div class="agent_img absolute">
+                    <img src="img/face1.jpg" alt="Agent image">
+                </div>
+            </div>
+            <div class="card_content">
+                <div class="card_body">
+                    <div class="flex justity_between">
+                        <p class="label">For Rent</p>
+                        <p class="product_price hidden">
+                            <span> &dollar;34,900</span>/Month
+                        </p>
+                    </div>
+                    <h2 class="card_title">
+                        <a href="#">New Apartment Nice View</a>
+                    </h2>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> Belmont Gardens, Chicago</p>
+                    <ul class="plot_breif flex">
+                        <li><span>3</span> Bed</li>
+                        <li><span>2</span> Bath</li>
+                        <li><span>3450</span> Square fit</li>
+                    </ul>
+                    <div class="card_links  flex">
+                        <a href="#" class="quick_view" title="Quick View"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                            <a href="#" class="wish_list" title="Wish List"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#" class="product_details" title="Product Details"><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="colum_view flex justity_between">
+                        <div class="real_estate_agent flex">
+                            <div class="agent_img">
+                                <a href="#"><img src="img/face1.jpg" alt="Agent image"></a>
+                            </div>
+                            <div class="agent_brief">
+                                <h6><a href="#">William Seklo</a></h6>
+                                <small>Estate Agents</small>
+                            </div>
+                        </div>
+                        <div class="links flex">
+                            <a href="#" class="quick_view" title="Quick View"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                            <a href="#" class="wish_list" title="Wish List"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#" class="product_details" title="Product Details"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_footer">
+                    <p class="product_price">
+                        <span> &dollar;34,900</span>/Month
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card flex dicrection_column">
+            <div class="card_header relative">
+                <figure>
+                    <a href="#">
+                        <img src="img/grid-3.jpg" alt="">
+                    </a>
+                </figure>
+                <div class="agent_img absolute">
+                    <img src="img/face1.jpg" alt="Agent image">
+                </div>
+            </div>
+            <div class="card_content">
+                <div class="card_body">
+                    <div class="flex justity_between">
+                        <p class="label">For Rent</p>
+                        <p class="product_price hidden">
+                            <span> &dollar;34,900</span>/Month
+                        </p>
+                    </div>
+                    <h2 class="card_title">
+                        <a href="#">New Apartment Nice View</a>
+                    </h2>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> Belmont Gardens, Chicago</p>
+                    <ul class="plot_breif flex">
+                        <li><span>3</span> Bed</li>
+                        <li><span>2</span> Bath</li>
+                        <li><span>3450</span> Square fit</li>
+                    </ul>
+                    <div class="card_links  flex">
+                        <a href="#" class="quick_view" title="Quick View"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                            <a href="#" class="wish_list" title="Wish List"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#" class="product_details" title="Product Details"><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="colum_view flex justity_between">
+                        <div class="real_estate_agent flex">
+                            <div class="agent_img">
+                                <a href="#"><img src="img/face1.jpg" alt="Agent image"></a>
+                            </div>
+                            <div class="agent_brief">
+                                <h6><a href="#">William Seklo</a></h6>
+                                <small>Estate Agents</small>
+                            </div>
+                        </div>
+                        <div class="links flex">
+                            <a href="#" class="quick_view" title="Quick View"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                            <a href="#" class="wish_list" title="Wish List"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#" class="product_details" title="Product Details"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_footer">
+                    <p class="product_price">
+                        <span> &dollar;34,900</span>/Month
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card flex dicrection_column">
+            <div class="card_header relative">
+                <figure>
+                    <a href="#">
+                        <img src="img/grid-3.jpg" alt="">
+                    </a>
+                </figure>
+                <div class="agent_img absolute">
+                    <img src="img/face1.jpg" alt="Agent image">
+                </div>
+            </div>
+            <div class="card_content">
+                <div class="card_body">
+                    <div class="flex justity_between">
+                        <p class="label">For Rent</p>
+                        <p class="product_price hidden">
+                            <span> &dollar;34,900</span>/Month
+                        </p>
+                    </div>
+                    <h2 class="card_title">
+                        <a href="#">New Apartment Nice View</a>
+                    </h2>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> Belmont Gardens, Chicago</p>
+                    <ul class="plot_breif flex">
+                        <li><span>3</span> Bed</li>
+                        <li><span>2</span> Bath</li>
+                        <li><span>3450</span> Square fit</li>
+                    </ul>
+                    <div class="card_links  flex">
+                        <a href="#" class="quick_view" title="Quick View"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                            <a href="#" class="wish_list" title="Wish List"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#" class="product_details" title="Product Details"><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="colum_view flex justity_between">
+                        <div class="real_estate_agent flex">
+                            <div class="agent_img">
+                                <a href="#"><img src="img/face1.jpg" alt="Agent image"></a>
+                            </div>
+                            <div class="agent_brief">
+                                <h6><a href="#">William Seklo</a></h6>
+                                <small>Estate Agents</small>
+                            </div>
+                        </div>
+                        <div class="links flex">
+                            <a href="#" class="quick_view" title="Quick View"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                            <a href="#" class="wish_list" title="Wish List"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#" class="product_details" title="Product Details"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_footer">
+                    <p class="product_price">
+                        <span> &dollar;34,900</span>/Month
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
